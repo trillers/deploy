@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "hawaii",
+      "script": "index.js",
+      "cwd": "/home/www/hawaii",
+      "exec_mode": "cluster_mode",
+      "instances": 2,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    {
+      "name": "sanya",
+      "script": "index.js",
+      "cwd": "/home/www/sanya",
+      "exec_mode": "cluster_mode",
+      "instances": 2,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
+
