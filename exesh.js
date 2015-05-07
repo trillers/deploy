@@ -1,9 +1,11 @@
 
 var spawn = require('child_process').spawn;
 
-function exesh()
+function exesh(shellFileName)
 {
-	free = spawn("/home/www/autodeploy.sh");
+	var shPath = __dirname + '/' + shellFileName;
+	free = spawn(shPath);
+	console.log(shPath);
 
 	// 捕获标准输出并将其打印到控制台
 	free.stdout.on('data', function (data)
