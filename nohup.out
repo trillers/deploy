@@ -1,0 +1,81 @@
+2015-05-06T04:12:48.723Z - [32minfo[39m: Configuration Loaded default configuration from /usr/local/lib/node_modules/pm2-web/server/components/../../config.json
+2015-05-06T04:12:48.726Z - [32minfo[39m: Configuration Final configuration: {
+  "www": {
+    "host": "localhost",
+    "address": "0.0.0.0",
+    "port": 9000,
+    "authentication": {
+      "enabled": false,
+      "username": "a_user_name",
+      "password": "**** LA LA LA, NOTHING TO SEE HERE ****"
+    },
+    "ssl": {
+      "enabled": false,
+      "upgrade": true,
+      "port": 9001,
+      "passphrase": "**** LA LA LA, NOTHING TO SEE HERE ****",
+      "key": "/path/to/key/file",
+      "certificate": "/path/to/certificate/file"
+    }
+  },
+  "ws": {
+    "frequency": 500
+  },
+  "pm2": [
+    {
+      "host": "localhost",
+      "rpc": "/root/.pm2/rpc.sock",
+      "events": "/root/.pm2/pub.sock"
+    }
+  ],
+  "updateFrequency": 5000,
+  "forceHardReload": false,
+  "logs": {
+    "max": 1000
+  },
+  "hostPurge": {
+    "frequency": 10000,
+    "cutoff": 60000
+  },
+  "graph": {
+    "datapoints": 1000,
+    "distribution": [
+      40,
+      25,
+      10,
+      10,
+      5
+    ]
+  },
+  "mdns": {
+    "enabled": false,
+    "name": "pm2"
+  },
+  "requiredPm2Version": "0.11.0"
+}
+2015-05-06T04:12:48.742Z - [32minfo[39m: Express server listening on 0.0.0.0:9000
+2015-05-06T04:12:48.750Z - [32minfo[39m: PM2Listener localhost RPC socket ready
+2015-05-06T04:12:48.750Z - [32minfo[39m: PM2Listener Querying version number from localhost
+2015-05-06T04:12:48.754Z - [32minfo[39m: PM2Listener localhost is running pm2 0.12.13
+[0mGET /js/vendor/angular/angular-route.js [36m304 [0m86.851 ms - -[0m
+[0mGET /js/vendor/angular/angular-sanitize.js [36m304 [0m84.294 ms - -[0m
+[0mGET /js/vendor/angular/angular.js [36m304 [0m124.913 ms - -[0m
+[0mGET /js/vendor/bootstrap/ui-bootstrap-tpls-0.7.0.min.js [36m304 [0m148.524 ms - -[0m
+[0mGET /js/vendor/reconnecting-websocket/reconnecting-websocket.min.js [36m304 [0m149.479 ms - -[0m
+[0mGET /js/vendor/highcharts/highcharts-all.js [36m304 [0m150.411 ms - -[0m
+[0mGET /css/reset.css [36m304 [0m64.550 ms - -[0m
+[0mGET /css/bootstrap.css [36m304 [0m71.310 ms - -[0m
+[0mGET /css/style.css [36m304 [0m78.724 ms - -[0m
+[0mGET /js/monitor.js [36m304 [0m1.961 ms - -[0m
+[0mGET /js/vendor/highcharts-ng/highcharts-ng.min.js [36m304 [0m5.519 ms - -[0m
+[0mGET /css/reset.css [36m304 [0m2.060 ms - -[0m
+[0mGET /css/bootstrap.css [36m304 [0m1.592 ms - -[0m
+[0mGET /css/style.css [36m304 [0m1.503 ms - -[0m
+[0mGET /js/partials/connecting.html [36m304 [0m1.827 ms - -[0m
+[0mGET /css/font-awesome.min.css [36m304 [0m1.950 ms - -[0m
+[0mGET /js/partials/host.html [36m304 [0m1.866 ms - -[0m
+[0mGET /img/satinweave.png [36m304 [0m8.069 ms - -[0m
+[0mGET /font/fontawesome-webfont.woff?v=3.2.1 [36m304 [0m6.104 ms - -[0m
+[0mGET /img/logo.png [36m304 [0m3.066 ms - -[0m
+2015-05-06T04:13:33.985Z - [32minfo[39m: PM2Listener localhost 5 stopProcessId
+2015-05-06T04:13:40.160Z - [32minfo[39m: PM2Listener localhost 5 startProcessId

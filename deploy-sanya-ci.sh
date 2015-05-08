@@ -6,4 +6,4 @@ git pull
 npm install
 npm install seedtrip/sanya-settings#ci
 
-pm2 start sanya
+pm2 restart boot-sanya-ci.json
