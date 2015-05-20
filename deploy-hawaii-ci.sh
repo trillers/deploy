@@ -1,4 +1,5 @@
 cd /home/www/hawaii/
+git checkout develop
 git pull origin develop
 
 npm install
