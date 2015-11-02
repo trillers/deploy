@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "sbot",
-      "script": "index.js",
+      "script": "src/app/app.js",
       "node_args": "--harmony",
       "cwd": "/home/www/sbot",
       "exec_mode": "cluster_mode",
