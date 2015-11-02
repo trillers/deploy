@@ -1,32 +1,32 @@
 var exec=require("./exesh");
 
-function deployHawaiiOnCi() {
-	console.log("begin to deploy hawaii on ci\n");
-	exec.exesh('deploy-hawaii-ci.sh');
-	return "begin deploy-hawaii-ci";
+function deployAthenaOnCi() {
+	console.log("begin to deploy athena on ci\n");
+	exec.exesh('deploy-athena-ci.sh');
+	return "begin deploy-athena-ci";
 }
 
-function deploySanyaOnCi() {
-	console.log("begin to deploy sanya on ci\n");
-	exec.exesh('deploy-sanya-ci.sh');
-	return "begin deploy-sanya-ci";
+function deploySbotOnCi() {
+	console.log("begin to deploy sbot on ci\n");
+	exec.exesh('deploy-sbot-ci.sh');
+	return "begin deploy-sbot-ci";
 }
 
-function deployHawaiiOnPrd() {
-	console.log("begin to deploy hawaii on production\n");
-	exec.exesh('deploy-hawaii-prd.sh');
-	return "begin deploy-hawaii-prd";
+function deployAthenaOnPrd() {
+	console.log("begin to deploy athena on production\n");
+	exec.exesh('deploy-athena-prd.sh');
+	return "begin deploy-athena-prd";
 }
 
-function deploySanyaOnPrd() {
-	console.log("begin to deploy sanya on production\n");
-	exec.exesh('deploy-sanya-prd.sh');
-	return "begin deploy-sanya-prd";
+function deploySbotOnPrd() {
+	console.log("begin to deploy sbot on production\n");
+	exec.exesh('deploy-sbot-prd.sh');
+	return "begin deploy-sbot-prd";
 }
 
-exports.deployHawaiiOnCi=deployHawaiiOnCi;
-exports.deploySanyaOnCi=deploySanyaOnCi;
-exports.deployHawaiiOnPrd=deployHawaiiOnPrd;
-exports.deploySanyaOnPrd=deploySanyaOnPrd;
+exports.deployAthenaOnCi=deployAthenaOnCi;
+exports.deploySbotOnCi=deploySbotOnCi;
+exports.deployAthenaOnPrd=deployAthenaOnPrd;
+exports.deploySbotOnPrd=deploySbotOnPrd;
 
 

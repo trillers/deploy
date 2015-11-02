@@ -8,11 +8,11 @@ var reqhandle=require("./reqhandle");
 var handle={};
 
 //handle["/"]=reqhandle.fail;
-handle["/deploy-hawaii-ci"]=reqhandle.deployHawaiiOnCi;
-handle["/deploy-sanya-ci"]=reqhandle.deploySanyaOnCi;
+handle["/deploy-athena-ci"]=reqhandle.deployAthenaOnCi;
+handle["/deploy-sbot-ci"]=reqhandle.deploySbotOnCi;
 
-handle["/deploy-hawaii-prd"]=reqhandle.deployHawaiiOnPrd;
-handle["/deploy-sanya-prd"]=reqhandle.deploySanyaOnPrd;
+handle["/deploy-athena-prd"]=reqhandle.deployAthenaOnPrd;
+handle["/deploy-sbot-prd"]=reqhandle.deploySbotOnPrd;
 
 //handle["/failure"]=reqhandle.fail;
 

@@ -1,11 +1,12 @@
 {
   "apps": [
     {
-      "name": "hawaii",
+      "name": "athena",
       "script": "index.js",
-      "cwd": "/home/www/hawaii",
+      "node_args": "--harmony",
+      "cwd": "/home/www/athena",
       "exec_mode": "cluster_mode",
-      "instances": 2,
+      "instances": 1,
       "env": {
         "NODE_ENV": "production"
       }

@@ -1,16 +1,16 @@
 {
   "apps": [
     {
-      "name": "sanya",
+      "name": "sbot",
       "script": "index.js",
-      "cwd": "/home/www/sanya",
+      "node_args": "--harmony",
+      "cwd": "/home/www/sbot",
       "exec_mode": "cluster_mode",
-      "instances": 2,
+      "instances": 1,
       "env": {
         "NODE_ENV": "development"
       }
     }
-
   ]
 }
 
