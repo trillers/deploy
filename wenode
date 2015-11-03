@@ -1,0 +1,29 @@
+case "$1" in
+  start)
+    echo -n "Starting sbot and athena"
+    pm2 start /home/www/deploy/boot-sbot-prd.json
+    pm2 start /home/www/deploy/boot-athena-prd.json
+    echo "."
+    ;;
+  stop)
+    echo -n "Stopping sbot and athena"
+    pm2 kill
+    echo "."
+    ;;
+  reload)
+    echo -n "Reloading sbot and athena"
+    pm2 reload sbot
+    pm2 reload athena
+    echo "."
+    ;;
+  restart)
+    echo -n "Restarting sbot and athena"
+    /home/www/deploy/./deploy-sbot-prd.sh
+    /home/www/deploy/./deploy-athena-prd.sh
+    ;;
+  *)
+        echo "Usage: /etc/init.d/wenode {start|stop|reload|restart}"
+        exit 1
+esac
+
+exit 0
