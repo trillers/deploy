@@ -1,3 +1,6 @@
+#!/bin/sh
+#
+# wenode service init script
 case "$1" in
   start)
     echo -n "Starting sbot and athena"
@@ -23,7 +26,5 @@ case "$1" in
     ;;
   *)
         echo "Usage: /etc/init.d/wenode {start|stop|reload|restart}"
-        exit 1
+        ;;
 esac
-
-exit 0
