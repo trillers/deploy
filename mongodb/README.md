@@ -19,3 +19,14 @@ db.createUser(
       ]
     }
 )
+
+use wenode-case
+db.createUser(
+    {
+      user: "wenode-case",
+      pwd: "wenode-case",
+      roles: [
+         { role: "readWrite", db: "wenode-case" }
+      ]
+    }
+)
