@@ -9,6 +9,17 @@ db.createUser(
     }
 )
 
+use wenode-ci
+db.createUser(
+    {
+      user: "wenode-ci",
+      pwd: "wenode-ci",
+      roles: [
+         { role: "readWrite", db: "wenode-ci" }
+      ]
+    }
+)
+
 use wenode-dev
 db.createUser(
     {
@@ -27,6 +38,17 @@ db.createUser(
       pwd: "wenode-case",
       roles: [
          { role: "readWrite", db: "wenode-case" }
+      ]
+    }
+)
+
+use mt
+db.createUser(
+    {
+      user: "mt",
+      pwd: "mt",
+      roles: [
+         { role: "readWrite", db: "mt" }
       ]
     }
 )
