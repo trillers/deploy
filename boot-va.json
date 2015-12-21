@@ -5,7 +5,7 @@
       "script": "index.js",
       "node_args": "--harmony",
       "cwd": "/home/www/va",
-      "exec_mode": "cluster_mode",
+      "exec_mode": "fork_mode",
       "instances": 1,
       "env": {
         "NODE_ENV": "production"
