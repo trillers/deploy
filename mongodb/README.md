@@ -9,6 +9,17 @@ db.createUser(
     }
 )
 
+use wenode-qa
+db.createUser(
+    {
+      user: "wenode-qa",
+      pwd: "wenode-qa",
+      roles: [
+         { role: "readWrite", db: "wenode-qa" }
+      ]
+    }
+)
+
 use wenode-ci
 db.createUser(
     {
