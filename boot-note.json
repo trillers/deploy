@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "note",
+      "script": "index.js",
+      "node_args": "--harmony",
+      "cwd": "/home/www/vmark",
+      "exec_mode": "cluster_mode",
+      "instances": 1,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
+
