@@ -4,7 +4,7 @@
       "name": "note",
       "script": "index.js",
       "node_args": "--harmony",
-      "cwd": "/home/www/vmark",
+      "cwd": "/home/www/note",
       "exec_mode": "cluster_mode",
       "instances": 1,
       "env": {
