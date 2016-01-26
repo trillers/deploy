@@ -63,3 +63,25 @@ db.createUser(
       ]
     }
 )
+
+use note
+db.createUser(
+    {
+      user: "note",
+      pwd: "note",
+      roles: [
+         { role: "readWrite", db: "note" }
+      ]
+    }
+)
+
+use note-ci
+db.createUser(
+    {
+      user: "note-ci",
+      pwd: "note-ci",
+      roles: [
+         { role: "readWrite", db: "note-ci" }
+      ]
+    }
+)
