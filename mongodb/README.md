@@ -64,6 +64,17 @@ db.createUser(
     }
 )
 
+use mt-ci
+db.createUser(
+    {
+      user: "mt-ci",
+      pwd: "mt-ci",
+      roles: [
+         { role: "readWrite", db: "mt-ci" }
+      ]
+    }
+)
+
 use note
 db.createUser(
     {
